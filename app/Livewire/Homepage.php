@@ -7,9 +7,9 @@ use App\Models\Category;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Home Page - Livewire Ecommerce')] 
 class Homepage extends Component
 {
-    #[Title('Home Page - Livewire Ecommerce')] 
     public function render()
     {
         $brands = Brand::where('is_active', true)->get();
